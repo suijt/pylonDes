@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 export default  function Header(){
@@ -22,11 +23,11 @@ export default  function Header(){
           <nav className="primary-menu navbar navbar-expand-lg">
             <div id="header-nav" className="collapse navbar-collapse">
               <ul className="navbar-nav">
-                <li className="dropdown"> <a className="dropdown-toggle" href="#">Home</a>
+                <li className="dropdown"><Link className="dropdown-toggle" href="/">Home</Link>
                 </li>
-                <li className="dropdown"> <a className="dropdown-toggle" href="#">About</a>
+                <li className="dropdown"><Link className="dropdown-toggle" href="plan">Plan</Link>
                 </li>
-                <li className="dropdown"> <a className="dropdown-toggle" href="#">Service</a>
+                <li className="dropdown"> <a className="dropdown-toggle" href="invoice">Invoice</a>
                 </li>
                 <li className="dropdown"> <a className="dropdown-toggle" href="#">Contact</a>
                 </li>
@@ -37,8 +38,8 @@ export default  function Header(){
 
 		  <nav className="login-signup navbar navbar-expand separator ml-sm-2 pl-sm-2">
 			<ul className="navbar-nav">
-			<li><a href="login.html">Login</a> </li>
-            <li className="align-items-center h-auto ml-sm-2"><a className="btn btn-sm btn-primary" href="signup.html">Sign Up</a></li>
+			<li><Link href="login">Login</Link></li>
+            <li className="align-items-center h-auto ml-sm-2"><Link href="signup" ><a className="btn btn-sm btn-primary">Sign Up</a></Link> </li>
 			</ul>
 		  </nav>
         </div>
