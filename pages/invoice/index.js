@@ -1,8 +1,5 @@
 
-import Link from 'next/link'
-import Layout from '../../comp/layout'
-import LogIn from '../../comp/LogIn'
-import SignUp from '../../comp/SignUp'
+
 
 export default function Invoice() {
   return (
