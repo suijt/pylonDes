@@ -27,7 +27,13 @@ export default  function Header(){
                 </li>
                 <li className="dropdown"><Link className="dropdown-toggle" href="plan">Plan</Link>
                 </li>
+                <li className="dropdown"><Link className="dropdown-toggle" href="order">Order</Link>
+                </li>
+                <li className="dropdown"><Link className="dropdown-toggle" href="email">email</Link>
+                </li>
                 <li className="dropdown"> <a className="dropdown-toggle" href="invoice">Invoice</a>
+                </li>
+                <li className="dropdown"> <a className="dropdown-toggle" href="profile">Profile</a>
                 </li>
                 <li className="dropdown"> <a className="dropdown-toggle" href="#">Contact</a>
                 </li>
