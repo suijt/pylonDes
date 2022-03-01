@@ -22,9 +22,9 @@ export default function LogIn() {
               <label class="custom-control-label" for="remember-me">Remember Me</label>
             </div>
           </div>
-          <div class="col text-2 text-right"><a class="btn-link" href="#">Forgot Password ?</a></div>
+          <div class="col text-2 text-right"><a class="btn-link" href="forgot_password">Forgot Password ?</a></div>
         </div>
-        <button class="btn btn-primary btn-block my-4" type="submit">Login</button>
+        <button class="btn btn-primary btn-block my-4" style={{width: '100%'}} type="submit">Login</button>
       </form>
       <div class="d-flex align-items-center my-3">
         <hr class="flex-grow-1" />
@@ -39,7 +39,7 @@ export default function LogIn() {
           <li class="social-icons-linkedin"><a href="#" data-toggle="tooltip" data-original-title="Log In with Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
         </ul>
       </div>
-      <p class="text-2 text-center mb-0">New to Quickai? <a class="btn-link" href="signup.html">Sign Up</a></p>
+      <p class="text-2 text-center mb-0">New to Quickai? <a class="btn-link" href="signup">Sign Up</a></p>
     </>
   )
 }

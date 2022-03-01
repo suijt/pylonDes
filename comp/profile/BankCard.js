@@ -16,8 +16,11 @@ const style = {
 export default function BankCard() {
 
   const [open, setOpen] = useState(false);
+  const [openAdd, setOpenAdd] = useState(false);
   const handleOpen = () => setOpen(true);
+  const handleOpenAdd = () => setOpenAdd(true);
   const handleClose = () => setOpen(false);
+  const handleCloseAdd = () => setOpenAdd(false);
 
   return (
   <>
@@ -32,7 +35,7 @@ export default function BankCard() {
                     thru<br />
                     </span> <span class="text-4 opacity-9">07/24</span> <span class="bg-white text-0 text-body font-weight-500 rounded-pill d-inline-block px-2 line-height-4 opacity-8 ml-auto">Primary</span> </p>
                   <p class="d-flex align-items-center m-0"> <span class="text-uppercase font-weight-500">Johne Cary</span> <img class="ml-auto" src="images/payment/visa.png" alt="visa" title="" /> </p>
-                  <div class="account-card-overlay rounded"> <span data-target="#edit-card-details" data-toggle="modal" class="pointer text-light btn-link mx-2" onClick={handleOpen}><span class="mr-1"><i class="fas fa-edit" ></i></span>Edit</span> <a href="#" class="text-light btn-link mx-2"><span class="mr-1"><i class="fas fa-minus-circle"></i></span>Remove</a> </div>
+                  <div class="account-card-overlay rounded"> <span data-target="#edit-card-details" data-toggle="modal" class="pointer text-light btn-link mx-2" onClick={handleOpenAdd}><span class="mr-1"><i class="fas fa-edit" ></i></span>Edit</span> <a href="#" class="text-light btn-link mx-2"><span class="mr-1"><i class="fas fa-minus-circle"></i></span>Remove</a> </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-lg-4 mb-4">
@@ -42,7 +45,7 @@ export default function BankCard() {
                     thru<br />
                     </span> <span class="text-4 opacity-9">07/23</span> </p>
                   <p class="d-flex align-items-center m-0"> <span class="text-uppercase font-weight-500">Johne Cary</span> <img class="ml-auto" src="images/payment/mastercard.png" alt="mastercard" title="" /> </p>
-                  <div class="account-card-overlay rounded"> <span data-target="#edit-card-details" data-toggle="modal" class=" pointer text-light btn-link mx-2" onClick={handleOpen}><span class="mr-1"><i class="fas fa-edit" ></i></span>Edit</span> <a href="#" class="text-light btn-link mx-2"><span class="mr-1"><i class="fas fa-minus-circle"></i></span>Remove</a> </div>
+                  <div class="account-card-overlay rounded"> <span data-target="#edit-card-details" data-toggle="modal" class=" pointer text-light btn-link mx-2" onClick={handleOpenAdd}><span class="mr-1"><i class="fas fa-edit" ></i></span>Edit</span> <a href="#" class="text-light btn-link mx-2"><span class="mr-1"><i class="fas fa-minus-circle"></i></span>Remove</a> </div>
                 </div>
               </div>
               <div class="col-12 col-sm-6 col-lg-4 mb-4">
@@ -52,12 +55,12 @@ export default function BankCard() {
                     thru<br />
                     </span> <span class="text-4 opacity-9">07/23</span> </p>
                   <p class="d-flex align-items-center m-0"> <span class="text-uppercase font-weight-500">Johne Cary</span> <img class="ml-auto" src="images/payment/mastercard.png" alt="mastercard" title="" /> </p>
-                  <div class="account-card-overlay rounded"> <span data-target="#edit-card-details" data-toggle="modal" class="pointer text-light btn-link mx-2" onClick={handleOpen}><span class="mr-1"><i class="fas fa-edit" ></i></span>Edit</span> <a href="#" class="text-light btn-link mx-2"><span class="mr-1"><i class="fas fa-minus-circle"></i></span>Remove</a> </div>
+                  <div class="account-card-overlay rounded"> <span data-target="#edit-card-details" data-toggle="modal" class="pointer text-light btn-link mx-2" ><span class="mr-1"><i class="fas fa-edit" ></i></span>Edit</span> <a href="#" class="text-light btn-link mx-2"><span class="mr-1"><i class="fas fa-minus-circle"></i></span>Remove</a> </div>
                 </div>
               </div>
-              <div class="col-12 col-sm-6 col-lg-4 mb-4"> <a href="" data-target="#add-new-card-details" data-toggle="modal" class="account-card-new d-flex align-items-center rounded h-100 p-3 mb-4 mb-lg-0">
+              <div class="col-12 col-sm-6 col-lg-4 mb-4"> <span onClick={handleOpenAdd}  data-target="#add-new-card-details" data-toggle="modal" class="pointer account-card-new d-flex align-items-center rounded h-100 p-3 mb-4 mb-lg-0">
                 <p class="w-100 text-center line-height-4 my-4"> <span class="text-3"><i class="fas fa-plus-circle"></i></span> <span class="d-block text-body text-3">Add New Card</span> </p>
-                </a> </div>
+                </span> </div>
             </div>
             <div id="edit-card-details" class="modal fade" role="dialog" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
@@ -99,61 +102,7 @@ export default function BankCard() {
                 </div>
               </div>
             </div>
-            <div id="add-new-card-details" class="modal fade" role="dialog" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title font-weight-400">Add a Card</h5>
-                    <button type="button" class="close font-weight-400" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-                  </div>
-                  <div class="modal-body p-4">
-                    <form id="addCard" method="post">
-                      <div class="btn-group d-flex btn-group-toggle mb-3" data-toggle="buttons">
-                        <label class="btn btn-outline-secondary btn-sm shadow-none w-100 active">
-                          <input type="radio" name="options" id="option1" checked="" />
-                          Debit </label>
-                        <label class="btn btn-outline-secondary btn-sm shadow-none w-100">
-                          <input type="radio" name="options" id="option2" />
-                          Credit </label>
-                      </div>
-                      <div class="form-group">
-                        <label for="cardType">Card Type</label>
-                        <select id="cardType" class="custom-select" required="">
-                          <option value="">Card Type</option>
-                          <option>Visa</option>
-                          <option>MasterCard</option>
-                          <option>American Express</option>
-                          <option>Discover</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="cardNumber">Card Number</label>
-                        <input type="text" class="form-control" data-bv-field="cardnumber" id="cardNumber" required="" value="" placeholder="Card Number" />
-                      </div>
-                      <div class="form-row">
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <label for="expiryDate">Expiry Date</label>
-                            <input id="expiryDate" type="text" class="form-control" data-bv-field="expiryDate" required="" value="" placeholder="MM/YY" />
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <label for="cvvNumber">CVV <span class="text-info ml-1" data-toggle="tooltip" data-original-title="For Visa/Mastercard, the three-digit CVV number is printed on the signature panel on the back of the card immediately after the card's account number. For American Express, the four-digit CVV number is printed on the front of the card above the card account number."><i class="fas fa-question-circle"></i></span></label>
-                            <input id="cvvNumber" type="password" class="form-control" data-bv-field="cvvnumber" required="" value="" placeholder="CVV (3 digits)" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="cardHolderName">Card Holder Name</label>
-                        <input type="text" class="form-control" data-bv-field="cardholdername" id="cardHolderName" required="" value="" placeholder="Card Holder Name" />
-                      </div>
-                      <button class="btn btn-primary btn-block" type="submit">Add Card</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
           <div>
       {/* <Button onClick={handleOpen}>Open modal</Button> */}
@@ -163,13 +112,13 @@ export default function BankCard() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style} className='p-0'>
+        <Box sx={style} className='p-0 modalBox'>
           {/* <div id="add-new-card-details block" class="modal fade" role="dialog" aria-hidden="true"> */}
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+              {/* <div class="modal-dialog modal-dialog-centered" role="document"> */}
+                {/* <div class="modal-content"> */}
                   <div class="modal-header">
                     <h5 class="modal-title font-weight-400">Add a Card</h5>
-                    <button type="button" style={{border:'none', background:'none'}} class="close font-weight-400" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                    <button onClick={handleClose} type="button" style={{border:'none', background:'none'}} class="close font-weight-400" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
                   </div>
                   <div class="modal-body p-4">
                     <form id="addCard" method="post">
@@ -218,9 +167,73 @@ export default function BankCard() {
                       <button class="btn btn-primary btn-block mt-3" type="submit">Add Card</button>
                     </form>
                   </div>
-                </div>
-              </div>
+                {/* </div> */}
+              {/* </div> */}
             {/* </div> */}
+        </Box>
+      </Modal>
+      <Modal
+        open={openAdd}
+        onClose={handleCloseAdd}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style} className='p-0 modalBox'>
+          {/* <div id="add-new-card-details" class="modal fade" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content"> */}
+                  <div class="modal-header">
+                    <h5 class="modal-title font-weight-400">Add a Card</h5>
+                    <button type="button" onClick={handleCloseAdd} style={{border:'none', background:'none'}} class="close font-weight-400" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                  </div>
+                  <div class="modal-body p-4">
+                    <form id="addCard" method="post">
+                      <div class="btn-group d-flex btn-group-toggle mb-3" data-toggle="buttons">
+                        <label class="btn btn-outline-secondary btn-sm shadow-none w-100 active">
+                          <input type="radio" name="options" id="option1" checked="" />
+                          Debit </label>
+                        <label class="btn btn-outline-secondary btn-sm shadow-none w-100">
+                          <input type="radio" name="options" id="option2" />
+                          Credit </label>
+                      </div>
+                      <div class="form-group">
+                        <label for="cardType">Card Type</label>
+                        <select id="cardType" class="custom-select form-select" required="">
+                          <option value="">Card Type</option>
+                          <option>Visa</option>
+                          <option>MasterCard</option>
+                          <option>American Express</option>
+                          <option>Discover</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" class="form-control" data-bv-field="cardnumber" id="cardNumber" required="" value="" placeholder="Card Number" />
+                      </div>
+                      <div class="form-row row">
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input id="expiryDate" type="text" class="form-control" data-bv-field="expiryDate" required="" value="" placeholder="MM/YY" />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label for="cvvNumber">CVV <span class="text-info ml-1" data-toggle="tooltip" data-original-title="For Visa/Mastercard, the three-digit CVV number is printed on the signature panel on the back of the card immediately after the card's account number. For American Express, the four-digit CVV number is printed on the front of the card above the card account number."><i class="fas fa-question-circle"></i></span></label>
+                            <input id="cvvNumber" type="password" class="form-control" data-bv-field="cvvnumber" required="" value="" placeholder="CVV (3 digits)" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="cardHolderName">Card Holder Name</label>
+                        <input type="text" class="form-control" data-bv-field="cardholdername" id="cardHolderName" required="" value="" placeholder="Card Holder Name" />
+                      </div>
+                      <button class="btn btn-primary btn-block mt-3" type="submit">Add Card</button>
+                    </form>
+                  </div>
+                {/* </div>
+              </div>
+            </div> */}
         </Box>
       </Modal>
     </div>

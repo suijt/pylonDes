@@ -19,7 +19,6 @@ export default  function Header(){
           
         </div>
         <div className="header-column justify-content-end"> 
-          
           <nav className="primary-menu navbar navbar-expand-lg">
             <div id="header-nav" className="collapse navbar-collapse">
               <ul className="navbar-nav">
@@ -34,8 +33,6 @@ export default  function Header(){
                 <li className="dropdown"> <a className="dropdown-toggle" href="invoice">Invoice</a>
                 </li>
                 <li className="dropdown"> <a className="dropdown-toggle" href="profile">Profile</a>
-                </li>
-                <li className="dropdown"> <a className="dropdown-toggle" href="#">Contact</a>
                 </li>
               </ul>
             </div>

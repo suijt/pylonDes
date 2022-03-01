@@ -6,11 +6,16 @@ import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import PaymentTab from './PaymentTab';
+import IntlTelInput from 'react-intl-tel-input';
+import 'react-intl-tel-input/dist/main.css';
 
 const steps = ['Order', 'Summary', 'Payment', 'Done'];
 
+
+
 export default function PorcessOrder() {
   const [activeStep, setActiveStep] = React.useState(0);
+  const [ativeCollaps, setAtiveCollaps] = React.useState(0);
   const [skipped, setSkipped] = React.useState(new Set());
 
   const isStepOptional = (step) => {
@@ -50,6 +55,15 @@ export default function PorcessOrder() {
       return newSkipped;
     });
   };
+  const changeCollaps=(value)=>{
+    // if(ativeCollaps && ativeCollaps == value  ){
+    //   setAtiveCollaps('')
+    // }else{
+      
+    // }
+    setAtiveCollaps(value)
+    
+  }
 
   const handleReset = () => {
     setActiveStep(0);
@@ -84,7 +98,11 @@ export default function PorcessOrder() {
             <form id="mobileTopup" method="post">
               <div className="row no-gutters search-input-2 mb-4">
                 <div className="col-lg-9 col-xl-10 form-group">
-                  <input type="text" className="form-control shadow form-control-lg" id="mobilenumber" required="" placeholder="Enter Mobile Number" />
+                  <IntlTelInput
+                    containerClassName="intl-tel-input"
+                    inputClassName="form-control"
+                  />
+                  {/* <input type="text" className="form-control shadow form-control-lg" id="mobilenumber" required="" placeholder="Enter Mobile Number" /> */}
                 </div>
                 <div className="col-lg-3 col-xl-2 form-group">
                   <button className="btn btn-primary shadow btn-block btn-lg" type="submit"><i className="fas fa-arrow-right"></i></button>
@@ -95,69 +113,73 @@ export default function PorcessOrder() {
             
             <div className="card">
               <div className="card-header" id="headingTwo">
-                <h5 className="mb-0"> <a href="#" className="collapsed text-4" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Operator Detected (Vodafone)</a> </h5>
+                <h5 className="mb-0"> <a onClick={()=>{changeCollaps(0)}} className="pointer collapsed text-4" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Operator Detected (Vodafone)</a> </h5>
               </div>
-              <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionDefault">
-                <div className="card-body pt-4">
-                  <div className="row operator-selection">
-            <div className="col-4 col-sm-3 col-lg-2 mb-4">
-              <div className="custom-radio">
-                <input id="operator1" name="operatorSelection" className="custom-control-input" required="" type="radio" />
-                <label className="custom-control-label" for="operator1"><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-1.png" alt="operator 1" /></label>
-              </div>
-            </div>
-            <div className="col-4 col-sm-3 col-lg-2 mb-4">
-              <div className="custom-radio">
-                <input id="operator2" name="operatorSelection" className="custom-control-input" required="" type="radio" />
-                <label className="custom-control-label" for="operator2"><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-2.png" alt="operator 2" /></label>
-              </div>
-            </div>
-            
-            <div className="col-4 col-sm-3 col-lg-2 mb-4">
-              <div className="custom-radio">
-                <input id="operator3" name="operatorSelection" className="custom-control-input" required="" type="radio" />
-                <label className="custom-control-label" for="operator3"><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-3.png" alt="operator 3" /></label>
-              </div>
-            </div>
-            
-            <div className="col-4 col-sm-3 col-lg-2 mb-4">
-              <div className="custom-radio">
-                <input id="operator4" name="operatorSelection" className="custom-control-input" required="" type="radio" />
-                <label className="custom-control-label" for="operator4"><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-4.png" alt="operator 4" /></label>
-              </div>
-            </div>
-            
-            <div className="col-4 col-sm-3 col-lg-2 mb-4">
-              <div className="custom-radio">
-                <input id="operator5" name="operatorSelection" className="custom-control-input" required="" type="radio"/>
-                <label className="custom-control-label" for="operator5"><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-5.png" alt="operator 5" /></label>
-              </div>
-            </div>
-            
-            <div className="col-4 col-sm-3 col-lg-2 mb-4">
-              <div className="custom-radio">
-                <input id="operator6" name="operatorSelection" className="custom-control-input" checked="" required="" type="radio" />
-                <label className="custom-control-label" for="operator6"><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-6.png" alt="operator 6" /></label>
-              </div>
-            </div>
-            
-            <div className="col-4 col-sm-3 col-lg-2 mb-4">
-              <div className="custom-radio">
-                <input id="operator7" name="operatorSelection" className="custom-control-input" required="" type="radio" />
-                <label className="custom-control-label" for="operator7" ><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-7.png" alt="operator 7" /></label>
-              </div>
-            </div>
-            
-          </div>
+              <TabPanel value={ativeCollaps} index={0}>
+                <div id="collapseTwo" className="" aria-labelledby="headingTwo" data-parent="#accordionDefault">
+                  <div className="card-body pt-4">
+                    <div className="row operator-selection">
+                      <div className="col-4 col-sm-3 col-lg-2 mb-4">
+                        <div className="custom-radio">
+                          <input id="operator1" name="operatorSelection" className="custom-control-input" required="" type="radio" />
+                          <label className="custom-control-label" for="operator1"><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-1.png" alt="operator 1" /></label>
+                        </div>
+                      </div>
+                      <div className="col-4 col-sm-3 col-lg-2 mb-4">
+                        <div className="custom-radio">
+                          <input id="operator2" name="operatorSelection" className="custom-control-input" required="" type="radio" />
+                          <label className="custom-control-label" for="operator2"><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-2.png" alt="operator 2" /></label>
+                        </div>
+                      </div>
+                      
+                      <div className="col-4 col-sm-3 col-lg-2 mb-4">
+                        <div className="custom-radio">
+                          <input id="operator3" name="operatorSelection" className="custom-control-input" required="" type="radio" />
+                          <label className="custom-control-label" for="operator3"><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-3.png" alt="operator 3" /></label>
+                        </div>
+                      </div>
+                      
+                      <div className="col-4 col-sm-3 col-lg-2 mb-4">
+                        <div className="custom-radio">
+                          <input id="operator4" name="operatorSelection" className="custom-control-input" required="" type="radio" />
+                          <label className="custom-control-label" for="operator4"><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-4.png" alt="operator 4" /></label>
+                        </div>
+                      </div>
+                      
+                      <div className="col-4 col-sm-3 col-lg-2 mb-4">
+                        <div className="custom-radio">
+                          <input id="operator5" name="operatorSelection" className="custom-control-input" required="" type="radio"/>
+                          <label className="custom-control-label" for="operator5"><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-5.png" alt="operator 5" /></label>
+                        </div>
+                      </div>
+                      
+                      <div className="col-4 col-sm-3 col-lg-2 mb-4">
+                        <div className="custom-radio">
+                          <input id="operator6" name="operatorSelection" className="custom-control-input" checked="" required="" type="radio" />
+                          <label className="custom-control-label" for="operator6"><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-6.png" alt="operator 6" /></label>
+                        </div>
+                      </div>
+                      
+                      <div className="col-4 col-sm-3 col-lg-2 mb-4">
+                        <div className="custom-radio">
+                          <input id="operator7" name="operatorSelection" className="custom-control-input" required="" type="radio" />
+                          <label className="custom-control-label" for="operator7" ><img className="img-fluid rounded-circle border" src="images/brands/operator/operator-7.png" alt="operator 7" /></label>
+                        </div>
+                      </div>
+              
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </TabPanel>
+              
             </div>
             
             <div className="card">
               <div className="card-header" id="headingThree">
-                <h5 className="mb-0"> <a href="#" className="collapsed text-4" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Select Top-up (5.10 USD)</a> </h5>
+                <h5 className="mb-0"> <a onClick={()=>{changeCollaps(1)}}  className="pointer collapsed text-4" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Select Top-up (5.10 USD)</a> </h5>
               </div>
-              <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionDefault">
+              <TabPanel value={ativeCollaps} index={1}>
+              <div id="collapseThree" className="" aria-labelledby="headingThree" data-parent="#accordionDefault">
                 <div className="card-body pt-4">
                   <div className="row">
                     <div className="col-sm-6 col-md-4 mb-4">
@@ -218,6 +240,8 @@ export default function PorcessOrder() {
                   <div className="text-center"><a href="#" className="btn-link text-3">See more Top Up<i className="fas fa-chevron-right text-2 ml-2"></i></a></div>
                 </div>
               </div>
+              </TabPanel>
+              
             </div>
             
           </div>
