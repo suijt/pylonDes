@@ -38,7 +38,7 @@ function a11yProps(index) {
   };
 }
 
-export default function PaymentTab() {
+export default function PaymentTab(props) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -139,7 +139,7 @@ export default function PaymentTab() {
               <input id="save-card" name="savecard" class="custom-control-input" type="checkbox" />
               <label class="custom-control-label" for="save-card">Save my card Details.</label>
             </div>
-            <a class="btn btn-primary btn-block" href="recharge-payment-success.html" style={{width:'100%'}}>Proceed to Pay $135</a>
+            <sapn onClick={()=>{props.handleClick()}} class="btn btn-primary btn-block"  style={{width:'100%'}}>Proceed to Pay $135</sapn>
           </form>
         </div>
       </TabPanel>

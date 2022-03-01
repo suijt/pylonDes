@@ -15,7 +15,7 @@ const steps = ['Order', 'Summary', 'Payment', 'Done'];
 
 export default function PorcessOrder() {
   const [activeStep, setActiveStep] = React.useState(0);
-  const [ativeCollaps, setAtiveCollaps] = React.useState(0);
+  const [ativeCollaps, setAtiveCollaps] = React.useState('');
   const [skipped, setSkipped] = React.useState(new Set());
 
   const isStepOptional = (step) => {
@@ -245,8 +245,7 @@ export default function PorcessOrder() {
             </div>
             
           </div>
-      
-        <p className="text-center mt-4 mb-0"><a href="recharge-order-summary.html" className="btn btn-primary">Proceesd to checkout</a></p>
+        <p className="text-center mt-4 mb-0"><a onClick={()=>{setActiveStep(1)}}  className=" pointer btn btn-primary">Proceesd to checkout</a></p>
           
           </div>
         </TabPanel>
@@ -301,7 +300,7 @@ export default function PorcessOrder() {
               </div>
               
               
-              <p class="mt-4 mb-0" ><a href="recharge-payment.html" class="btn btn-primary btn-block" style={{width:'100%'}}>Make Payment</a></p>
+              <p class="mt-4 mb-0" ><a onClick={()=>{setActiveStep(2)}} class="pointer btn btn-primary btn-block" style={{width:'100%'}}>Make Payment</a></p>
             </div>
           </div>
         </TabPanel>
@@ -319,7 +318,7 @@ export default function PorcessOrder() {
                   </ul> */}
                   
                   <div class="tab-content my-3" id="myTabContentVertical"> 
-                  <PaymentTab />
+                  <PaymentTab  handleClick={()=>{setActiveStep(3)}}/>
                   </div>
                 </div>
                 <div class="col-md-5 col-lg-5 order-0 order-md-1"> 
@@ -394,7 +393,7 @@ export default function PorcessOrder() {
               <a href="#" class="btn-link text-muted mx-3 my-2 align-items-center d-inline-flex"><span class="text-5 mr-2"><i class="far fa-file-pdf"></i></span>Save as PDF</a>
               <a href="#" class="btn-link text-muted mx-3 my-2 align-items-center d-inline-flex"><span class="text-5 mr-2"><i class="fas fa-print"></i></span>Print Receipt</a>
               <a href="#" class="btn-link text-muted mx-3 my-2 align-items-center d-inline-flex"><span class="text-5 mr-2"><i class="far fa-envelope"></i></span>Email Receipt</a>
-              <p class="mt-4 mb-0"><a href="#" class="btn btn-primary">Make another Recharge</a></p>
+              <p class="mt-4 mb-0"><span onClick={()=>{setActiveStep(0)}}  className="btn btn-primary">Make another Recharge</span></p>
             </div>
           </div>
         </TabPanel>
