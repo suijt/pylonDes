@@ -6,6 +6,9 @@ import Head from 'next/head'
 import Script from 'next/script'
 import "../styles/font-awesome/css/all.min.css"
 import '../styles/main.scss'
+import '../styles/flag-icon-css/css/flag-icons.min.css'
+
+
 
 function MyApp({ Component, pageProps }) {
   return (
