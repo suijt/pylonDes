@@ -1,4 +1,3 @@
-
 import Link from 'next/link'
 import Layout from '../../comp/layout'
 import LogIn from '../../comp/LogIn'
@@ -23,11 +22,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </Layout>
-      
-    </>
-      
-
-      
+    </Layout>      
+    </>          
   )
 }
