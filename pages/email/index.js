@@ -7,7 +7,7 @@ export default function Email() {
     
     <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
   <tr>
-    <td align="center" valign="top"><table class="contenttable" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" style={{borderWidth:'1px', borderStyle: 'solid', borderCollapse: 'separate', borderColor:'#ededed', marginTop:'20px', fontFamily:'Arial, Helvetica, sans-serif'}}>
+    <td align="center" valign="top"><table className="contenttable" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" style={{borderWidth:'1px', borderStyle: 'solid', borderCollapse: 'separate', borderColor:'#ededed', marginTop:'20px', fontFamily:'Arial, Helvetica, sans-serif'}}>
         <tr>
           <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
               <tbody>
@@ -89,7 +89,7 @@ export default function Email() {
           <td><table width="100%" cellspacing="0" cellpadding="0" border="0" style={{fontSize:'13px', color:'#555555', fontFamily:'Arial, Helvetica, sans-serif'}}>
               <tbody>
                 <tr>
-                  <td class="tablepadding" align="center" style={{fontSize:'14px', lineHeight:'32px', padding:'5px 20px 34px 20px'}}> Any Questions? Get in touch with our 24x7 Customer Care team.<br />
+                  <td className="tablepadding" align="center" style={{fontSize:'14px', lineHeight:'32px', padding:'5px 20px 34px 20px'}}> Any Questions? Get in touch with our 24x7 Customer Care team.<br />
                     <a href="#" style={{backgroundColor:'#0071cc', color:'#ffffff', padding:'8px 25px', bordeRadius:'4px', fontSize:'14px', textDecoration:'none', display:'inline-block', textTransform:'uppercase', marginTop:'10px',}}>Contact Customer Care</a></td>
                 </tr>
                 <tr> </tr>
@@ -102,10 +102,10 @@ export default function Email() {
     <td><table width="100%" cellspacing="0" cellpadding="0" border="0" style={{fontSize:'13px', color:'#777777', fontFamily:'Arial, Helvetica, sans-serif'}}>
         <tbody>
           <tr>
-            <td class="tablepadding" style={{padding:'20px 0', borderCollapse:'collapse'}}><table width="100%" cellspacing="0" cellpadding="0" border="0" style={{fontSize:'13px', color:'#777777', fontFamily:'Arial, Helvetica, sans-serif'}}>
+            <td className="tablepadding" style={{padding:'20px 0', borderCollapse:'collapse'}}><table width="100%" cellspacing="0" cellpadding="0" border="0" style={{fontSize:'13px', color:'#777777', fontFamily:'Arial, Helvetica, sans-serif'}}>
                 <tbody>
                   <tr>
-                    <td align="center" class="tablepadding" style={{lineHeight:'20px', padding:'20px'}}> Quickai Template, 2705 N. Enterprise St
+                    <td align="center" className="tablepadding" style={{lineHeight:'20px', padding:'20px'}}> Quickai Template, 2705 N. Enterprise St
                       Orange, CA 92865.</td>
                   </tr>
                 </tbody>
@@ -121,7 +121,7 @@ export default function Email() {
               <table width="100%" cellspacing="0" cellpadding="0" border="0" style={{fontSize:'13px', color:'#777777', fontFamily:'Arial, Helvetica, sans-serif'}}>
                 <tbody>
                   <tr>
-                    <td class="tablepadding" align="center" style={{lineHeight:'20px', paddingTop:'10px', paddingBottom:'20px',}}>Copyright &copy; 2019 Quickai. All Rights Reserved. </td>
+                    <td className="tablepadding" align="center" style={{lineHeight:'20px', paddingTop:'10px', paddingBottom:'20px',}}>Copyright &copy; 2019 Quickai. All Rights Reserved. </td>
                   </tr>
                 </tbody>
               </table></td>

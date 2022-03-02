@@ -38,7 +38,7 @@ function a11yProps(index) {
   };
 }
 
-export default function PaymentTab() {
+export default function PaymentTab(props) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -55,18 +55,18 @@ export default function PaymentTab() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <div class="tab-pane fade show active" id="firstTab" role="tabpanel" aria-labelledby="first-tab">
-          <h3 class="text-4 mb-4">Enter Card Details</h3>
+        <div className="tab-pane fade show active" id="firstTab" role="tabpanel" aria-labelledby="first-tab">
+          <h3 className="text-4 mb-4">Enter Card Details</h3>
           <form id="payment" method="post">
-            <div class="form-group">
+            <div className="form-group">
               <label for="cardNumber">Enter Debit / Credit Card Number</label>
-              <input type="text" class="form-control" data-bv-field="cardnumber" id="cardNumber" required="" placeholder="Card Number" />
+              <input type="text" className="form-control" data-bv-field="cardnumber" id="cardNumber" required="" placeholder="Card Number" />
             </div>
-            <div class="form-row row">
-              <div class="col-lg-4">
-                <div class="form-group">
+            <div className="form-row row">
+              <div className="col-lg-4">
+                <div className="form-group">
                   <label for="expiryMonth">Expiry Month</label>
-                  <select id="expiryMonth" class="custom-select form-select" required="">
+                  <select id="expiryMonth" className="custom-select form-select" required="">
                     <option value="">Expiry Month</option>
                     <option value="1">January</option>
                     <option value="2">February</option>
@@ -83,10 +83,10 @@ export default function PaymentTab() {
                   </select>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div class="form-group">
+              <div className="col-lg-4">
+                <div className="form-group">
                   <label for="expiryYear">Expiry Year</label>
-                  <select id="expiryYear" class="custom-select form-select" required="">
+                  <select id="expiryYear" className="custom-select form-select" required="">
                     <option value="">Expiry Year</option>
                     <option>2018</option>
                     <option>2019</option>
@@ -124,30 +124,30 @@ export default function PaymentTab() {
                   </select>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div class="form-group">
+              <div className="col-lg-4">
+                <div className="form-group">
                   <label for="cvvNumber">CVV</label>
-                  <input type="text" class="form-control" data-bv-field="cvvnumber" id="cvvNumber" required="" placeholder="CVV Number" />
+                  <input type="text" className="form-control" data-bv-field="cvvnumber" id="cvvNumber" required="" placeholder="CVV Number" />
                 </div>
               </div>
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <label for="cardHolderName">Card Holder Name</label>
-              <input type="text" class="form-control" data-bv-field="cardholdername" id="cardHolderName" required="" placeholder="Card Holder Name" />
+              <input type="text" className="form-control" data-bv-field="cardholdername" id="cardHolderName" required="" placeholder="Card Holder Name" />
             </div>
-            <div class="form-group custom-control custom-checkbox">
-              <input id="save-card" name="savecard" class="custom-control-input" type="checkbox" />
-              <label class="custom-control-label" for="save-card">Save my card Details.</label>
+            <div className="form-group custom-control custom-checkbox">
+              <input id="save-card" name="savecard" className="custom-control-input" type="checkbox" />
+              <label className="custom-control-label" for="save-card">Save my card Details.</label>
             </div>
-            <a class="btn btn-primary btn-block" href="recharge-payment-success.html" style={{width:'100%'}}>Proceed to Pay $135</a>
+            <sapn onClick={()=>{props.handleClick()}} className="btn btn-primary btn-block"  style={{width:'100%'}}>Proceed to Pay $135</sapn>
           </form>
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <div class="tab-pane fade show active" id="secondTab" role="tabpanel" aria-labelledby="second-tab"> <img class="img-fluid" src="images/paypal-logo.png" alt="Paypal Logo" title="Pay easily, fast and secure with PayPal." />
-          <p class="lead">Pay easily, fast and secure with PayPal.</p>
-          <p class="text-info mb-4"><i class="fas fa-info-circle"></i> You will be redirected to PayPal to complete your payment securely.</p>
-          <a class="btn btn-primary btn-block d-flex align-items-center justify-content-center" href="recharge-payment-success.html"><i class="fab fa-paypal fa-2x mr-2"></i> Pay via PayPal</a> 
+        <div className="tab-pane fade show active" id="secondTab" role="tabpanel" aria-labelledby="second-tab"> <img className="img-fluid" src="images/paypal-logo.png" alt="Paypal Logo" title="Pay easily, fast and secure with PayPal." />
+          <p className="lead">Pay easily, fast and secure with PayPal.</p>
+          <p className="text-info mb-4"><i className="fas fa-info-circle"></i> You will be redirected to PayPal to complete your payment securely.</p>
+          <a className="btn btn-primary btn-block d-flex align-items-center justify-content-center" href="recharge-payment-success.html"><i className="fab fa-paypal fa-2x mr-2"></i> Pay via PayPal</a> 
         </div>
       </TabPanel>
       

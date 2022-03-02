@@ -15,3 +15,24 @@ label{
 .pointer{
   cursor: pointer !important;
 }
+.height{
+  height: 100%;
+  box-shadow: 0px 0px 15px -1px #d0d0d0 !important;
+  input{
+    padding: 10px !important;
+  }
+  .flag-icon{
+    margin: 0px 10px !important;
+  }
+}
+.modalBox{
+  height: 592px;
+  overflow-y: auto;
+}
+.otp{
+  
+  input{
+    height: 55px;
+    width: 55px !important;
+  }
+}

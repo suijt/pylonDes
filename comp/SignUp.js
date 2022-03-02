@@ -21,7 +21,7 @@ export default function SignUp(){
           <label className="custom-control-label" for="agree">I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</label>
         </div>
       </div>
-      <button className="btn btn-primary btn-block my-4" type="submit">Sign Up</button>
+      <button className="btn btn-primary btn-block my-4" style={{width: '100%'}} type="submit">Sign Up</button>
     </form>
     <div className="d-flex align-items-center my-3">
       <hr className="flex-grow-1" />
@@ -36,7 +36,7 @@ export default function SignUp(){
         <li className="social-icons-linkedin"><a href="#" data-toggle="tooltip" data-original-title="Sign Up with Linkedin"><i className="fab fa-linkedin-in"></i></a></li>
       </ul>
     </div>
-    <p className="text-2 text-center mb-0">Already have an account? <a className="btn-link" href="login.html">Log In</a></p>
+    <p className="text-2 text-center mb-0">Already have an account? <a className="btn-link" href="login">Log In</a></p>
     </>
   )
 }

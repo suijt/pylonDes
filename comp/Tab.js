@@ -59,155 +59,155 @@ export default function TabPlan() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-      <div class="tab-pane fade show active" id="oneTab" role="tabpanel" aria-labelledby="one-tab">
-                <div class="row">
-          	<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card text-center">
-              <div class="card-header">
-                <h5 class="card-title text-4 mb-0">Talktime</h5>
+      <div className="tab-pane fade show active" id="oneTab" role="tabpanel" aria-labelledby="one-tab">
+                <div className="row">
+          	<div className="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div className="card text-center">
+              <div className="card-header">
+                <h5 className="card-title text-4 mb-0">Talktime</h5>
               </div>
-              <div class="card-body">
-              <ul class="list-unstyled">
-              <li class="mb-3">Talktime $8, 7 D</li>
-              <li class="mb-3 text-black-50">Validity 7 Days</li>
-              <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+              <div className="card-body">
+              <ul className="list-unstyled">
+              <li className="mb-3">Talktime $8, 7 D</li>
+              <li className="mb-3 text-black-50">Validity 7 Days</li>
+              <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
               </ul>
-              <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 10</button>
+              <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 10</button>
               </div>
               </div>
                   </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                  <div class="card text-center">
-              <div class="card-header">
-                <h5 class="card-title text-4 mb-0">Talktime</h5>
+                  <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div className="card text-center">
+              <div className="card-header">
+                <h5 className="card-title text-4 mb-0">Talktime</h5>
               </div>
-              <div class="card-body">
-              <ul class="list-unstyled">
-              <li class="mb-3">Talktime Rs. 47 &, 28 D</li>
-              <li class="mb-3 text-black-50">Validity 28 Days</li>
-              <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+              <div className="card-body">
+              <ul className="list-unstyled">
+              <li className="mb-3">Talktime Rs. 47 &, 28 D</li>
+              <li className="mb-3 text-black-50">Validity 28 Days</li>
+              <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
               </ul>
-              <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 50</button>
+              <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 50</button>
               </div>
               </div>
                   </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                  <div class="card text-center">
-              <div class="card-header">
-                <h5 class="card-title text-4 mb-0">Talktime</h5>
+                  <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div className="card text-center">
+              <div className="card-header">
+                <h5 className="card-title text-4 mb-0">Talktime</h5>
               </div>
-              <div class="card-body">
-              <ul class="list-unstyled">
-              <li class="mb-3">Local min 92 & 10 SMS, 28 D</li>
-              <li class="mb-3 text-black-50">Validity 28 Days</li>
-              <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+              <div className="card-body">
+              <ul className="list-unstyled">
+              <li className="mb-3">Local min 92 & 10 SMS, 28 D</li>
+              <li className="mb-3 text-black-50">Validity 28 Days</li>
+              <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
               </ul>
-              <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 100</button>
+              <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 100</button>
               </div>
               </div>
                   </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                  <div class="card text-center">
-              <div class="card-header bg-secondary">
-                <h5 class="card-title text-4 text-white mb-0">Unlimited</h5>
+                  <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div className="card text-center">
+              <div className="card-header bg-secondary">
+                <h5 className="card-title text-4 text-white mb-0">Unlimited</h5>
               </div>
-              <div class="card-body">
-              <ul class="list-unstyled">
-              <li class="mb-3">Unlimited Talktime</li>
-              <li class="mb-3 text-black-50">Validity 90 Days</li>
-              <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+              <div className="card-body">
+              <ul className="list-unstyled">
+              <li className="mb-3">Unlimited Talktime</li>
+              <li className="mb-3 text-black-50">Validity 90 Days</li>
+              <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
               </ul>
-              <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 499</button>
+              <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 499</button>
               </div>
               </div>
                   </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                  <div class="card text-center">
-              <div class="card-header">
-                <h5 class="card-title text-4 mb-0">Talktime</h5>
+                  <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div className="card text-center">
+              <div className="card-header">
+                <h5 className="card-title text-4 mb-0">Talktime</h5>
               </div>
-              <div class="card-body">
-              <ul class="list-unstyled">
-              <li class="mb-3">Talktime $143 & 50 SMS, 60 D</li>
-              <li class="mb-3 text-black-50">Validity 60 Days</li>
-              <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+              <div className="card-body">
+              <ul className="list-unstyled">
+              <li className="mb-3">Talktime $143 & 50 SMS, 60 D</li>
+              <li className="mb-3 text-black-50">Validity 60 Days</li>
+              <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
               </ul>
-              <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 150</button>
+              <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 150</button>
               </div>
               </div>
                   </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                  <div class="card text-center">
-              <div class="card-header bg-secondary">
-                <h5 class="card-title text-4 text-white mb-0">Unlimited</h5>
+                  <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div className="card text-center">
+              <div className="card-header bg-secondary">
+                <h5 className="card-title text-4 text-white mb-0">Unlimited</h5>
               </div>
-              <div class="card-body">
-              <ul class="list-unstyled">
-              <li class="mb-3">Unlimited Talktime</li>
-              <li class="mb-3 text-black-50">Validity 28 Days</li>
-              <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+              <div className="card-body">
+              <ul className="list-unstyled">
+              <li className="mb-3">Unlimited Talktime</li>
+              <li className="mb-3 text-black-50">Validity 28 Days</li>
+              <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
               </ul>
-              <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 199</button>
+              <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 199</button>
               </div>
               </div>
                   </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                  <div class="card text-center">
-              <div class="card-header">
-                <h5 class="card-title text-4 mb-0">Full Talktime</h5>
+                  <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div className="card text-center">
+              <div className="card-header">
+                <h5 className="card-title text-4 mb-0">Full Talktime</h5>
               </div>
-              <div class="card-body">
-              <ul class="list-unstyled">
-              <li class="mb-3">$220 Full Talktime, 28 D</li>
-              <li class="mb-3 text-black-50">Validity 28 Days</li>
-              <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+              <div className="card-body">
+              <ul className="list-unstyled">
+              <li className="mb-3">$220 Full Talktime, 28 D</li>
+              <li className="mb-3 text-black-50">Validity 28 Days</li>
+              <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
               </ul>
-              <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 220</button>
+              <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 220</button>
               </div>
               </div>
                   </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                  <div class="card text-center">
-              <div class="card-header">
-                <h5 class="card-title text-4 mb-0">Full Talktime</h5>
+                  <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div className="card text-center">
+              <div className="card-header">
+                <h5 className="card-title text-4 mb-0">Full Talktime</h5>
               </div>
-              <div class="card-body">
-              <ul class="list-unstyled">
-              <li class="mb-3">Full Talktime $250</li>
-              <li class="mb-3 text-black-50">Validity 64 Days</li>
-              <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+              <div className="card-body">
+              <ul className="list-unstyled">
+              <li className="mb-3">Full Talktime $250</li>
+              <li className="mb-3 text-black-50">Validity 64 Days</li>
+              <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
               </ul>
-              <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 250</button>
+              <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 250</button>
               </div>
               </div>
                   </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                  <div class="card text-center">
-              <div class="card-header bg-secondary">
-                <h5 class="card-title text-4 text-white mb-0">Unlimited</h5>
+                  <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div className="card text-center">
+              <div className="card-header bg-secondary">
+                <h5 className="card-title text-4 text-white mb-0">Unlimited</h5>
               </div>
-              <div class="card-body">
-              <ul class="list-unstyled">
-              <li class="mb-3">Unlimited Talktime</li>
-              <li class="mb-3 text-black-50">Validity 90 Days</li>
-              <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+              <div className="card-body">
+              <ul className="list-unstyled">
+              <li className="mb-3">Unlimited Talktime</li>
+              <li className="mb-3 text-black-50">Validity 90 Days</li>
+              <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
               </ul>
-              <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 399</button>
+              <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 399</button>
               </div>
               </div>
                   </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                  <div class="card text-center">
-              <div class="card-header">
-                <h5 class="card-title text-4 mb-0">Full Talktime</h5>
+                  <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
+                  <div className="card text-center">
+              <div className="card-header">
+                <h5 className="card-title text-4 mb-0">Full Talktime</h5>
               </div>
-              <div class="card-body">
-              <ul class="list-unstyled">
-              <li class="mb-3">Full Talktime $510, 180 D</li>
-              <li class="mb-3 text-black-50">Validity 180 Days</li>
-              <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+              <div className="card-body">
+              <ul className="list-unstyled">
+              <li className="mb-3">Full Talktime $510, 180 D</li>
+              <li className="mb-3 text-black-50">Validity 180 Days</li>
+              <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
               </ul>
-              <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 501</button>
+              <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 501</button>
               </div>
               </div>
                   </div>
@@ -217,50 +217,50 @@ export default function TabPlan() {
               </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
-      <div class="tab-pane fade show active" id="twoTab" role="tabpanel" aria-labelledby="two-tab">
-                <div class="row">
-          	<div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Talktime</h5>
+      <div className="tab-pane fade show active" id="twoTab" role="tabpanel" aria-labelledby="two-tab">
+                <div className="row">
+          	<div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Talktime</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Talktime $8, 0 D</li>
-        <li class="mb-3 text-black-50">Validity 0 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Talktime $8, 0 D</li>
+        <li className="mb-3 text-black-50">Validity 0 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 10</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 10</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Regular Talktime</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Regular Talktime</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Regular Talktime $38.50</li>
-        <li class="mb-3 text-black-50">Validity 0 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Regular Talktime $38.50</li>
+        <li className="mb-3 text-black-50">Validity 0 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 50</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 50</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Full Talktime</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Full Talktime</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Talktime Rs. 100</li>
-        <li class="mb-3 text-black-50">Validity 0 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Talktime Rs. 100</li>
+        <li className="mb-3 text-black-50">Validity 0 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 100</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 100</button>
         </div>
         </div>
             </div>
@@ -269,110 +269,110 @@ export default function TabPlan() {
               </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
-      <div class="tab-pane fade show active" id="threeTab" role="tabpanel" aria-labelledby="three-tab">
-                <div class="row">
-          	<div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Validity</h5>
+      <div className="tab-pane fade show active" id="threeTab" role="tabpanel" aria-labelledby="three-tab">
+                <div className="row">
+          	<div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Validity</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Talktime $0</li>
-        <li class="mb-3 text-black-50">Validity 1 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Talktime $0</li>
+        <li className="mb-3 text-black-50">Validity 1 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 9</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 9</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Talktime</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Talktime</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Talktime Rs. 26 & @ 2.5p/sec</li>
-        <li class="mb-3 text-black-50">Validity 28 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Talktime Rs. 26 & @ 2.5p/sec</li>
+        <li className="mb-3 text-black-50">Validity 28 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 35</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 35</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Talktime</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Talktime</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Talktime Rs. 47 &, 28 D</li>
-        <li class="mb-3 text-black-50">Validity 28 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Talktime Rs. 47 &, 28 D</li>
+        <li className="mb-3 text-black-50">Validity 28 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 50</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 50</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Talktime</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Talktime</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Local min 92 & 10 SMS, 28 D</li>
-        <li class="mb-3 text-black-50">Validity 28 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Local min 92 & 10 SMS, 28 D</li>
+        <li className="mb-3 text-black-50">Validity 28 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 100</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 100</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Talktime</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Talktime</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Talktime $143 & 50 SMS, 60 D</li>
-        <li class="mb-3 text-black-50">Validity 60 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Talktime $143 & 50 SMS, 60 D</li>
+        <li className="mb-3 text-black-50">Validity 60 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 150</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 150</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header bg-secondary">
-        	<h5 class="card-title text-white text-4 mb-0">Unlimited</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header bg-secondary">
+        	<h5 className="card-title text-white text-4 mb-0">Unlimited</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Unlimited Talktime</li>
-        <li class="mb-3 text-black-50">Validity 28 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Unlimited Talktime</li>
+        <li className="mb-3 text-black-50">Validity 28 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 199</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 199</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Full Talktime</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Full Talktime</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">$220 Full Talktime, 28 D</li>
-        <li class="mb-3 text-black-50">Validity 28 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">$220 Full Talktime, 28 D</li>
+        <li className="mb-3 text-black-50">Validity 28 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 220</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 220</button>
         </div>
         </div>
             </div>
@@ -385,50 +385,50 @@ export default function TabPlan() {
               </div>
       </TabPanel>
       <TabPanel value={value} index={3}>
-      <div class="tab-pane fade show active" id="fourTab" role="tabpanel" aria-labelledby="four-tab">
-                <div class="row">
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Full Talktime</h5>
+      <div className="tab-pane fade show active" id="fourTab" role="tabpanel" aria-labelledby="four-tab">
+                <div className="row">
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Full Talktime</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">$220 Full Talktime, 28 D</li>
-        <li class="mb-3 text-black-50">Validity 28 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">$220 Full Talktime, 28 D</li>
+        <li className="mb-3 text-black-50">Validity 28 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 220</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 220</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Full Talktime</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Full Talktime</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Full Talktime $250</li>
-        <li class="mb-3 text-black-50">Validity 64 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Full Talktime $250</li>
+        <li className="mb-3 text-black-50">Validity 64 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 250</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 250</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Full Talktime</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Full Talktime</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Full Talktime $510, 180 D</li>
-        <li class="mb-3 text-black-50">Validity 180 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Full Talktime $510, 180 D</li>
+        <li className="mb-3 text-black-50">Validity 180 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 501</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 501</button>
         </div>
         </div>
             </div>
@@ -437,66 +437,66 @@ export default function TabPlan() {
               </div>
       </TabPanel>
       <TabPanel value={value} index={4}>
-      <div class="tab-pane fade show active" id="fiveTab" role="tabpanel" aria-labelledby="five-tab">
-                <div class="row">
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Data</h5>
+      <div className="tab-pane fade show active" id="fiveTab" role="tabpanel" aria-labelledby="five-tab">
+                <div className="row">
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Data</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">500 MB Data</li>
-        <li class="mb-3 text-black-50">Validity 14 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">500 MB Data</li>
+        <li className="mb-3 text-black-50">Validity 14 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 39</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 39</button>
         </div>
         </div>
             </div>
             
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Data</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Data</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">4.5 GB Data</li>
-        <li class="mb-3 text-black-50">Validity 28 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">4.5 GB Data</li>
+        <li className="mb-3 text-black-50">Validity 28 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 49</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 49</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Data</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Data</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">6 GB Data</li>
-        <li class="mb-3 text-black-50">Validity 28 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">6 GB Data</li>
+        <li className="mb-3 text-black-50">Validity 28 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 99</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 99</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header">
-        	<h5 class="card-title text-4 mb-0">Data</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header">
+        	<h5 className="card-title text-4 mb-0">Data</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">8 GB Data</li>
-        <li class="mb-3 text-black-50">Validity 90 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">8 GB Data</li>
+        <li className="mb-3 text-black-50">Validity 90 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 149</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 149</button>
         </div>
         </div>
             </div>
@@ -504,50 +504,50 @@ export default function TabPlan() {
               </div>
       </TabPanel>
       <TabPanel value={value} index={5}>
-      <div class="tab-pane fade show active" id="sevenTab" role="tabpanel" aria-labelledby="seven-tab">
-                <div class="row">
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header bg-secondary">
-        	<h5 class="card-title text-4 text-white mb-0">Unlimited</h5>
+      <div className="tab-pane fade show active" id="sevenTab" role="tabpanel" aria-labelledby="seven-tab">
+                <div className="row">
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header bg-secondary">
+        	<h5 className="card-title text-4 text-white mb-0">Unlimited</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Unlimited Talktime</li>
-        <li class="mb-3 text-black-50">Validity 90 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Unlimited Talktime</li>
+        <li className="mb-3 text-black-50">Validity 90 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 499</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 499</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header bg-secondary">
-        	<h5 class="card-title text-4 text-white mb-0">Unlimited</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header bg-secondary">
+        	<h5 className="card-title text-4 text-white mb-0">Unlimited</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Unlimited Talktime</li>
-        <li class="mb-3 text-black-50">Validity 28 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Unlimited Talktime</li>
+        <li className="mb-3 text-black-50">Validity 28 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 199</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 199</button>
         </div>
         </div>
             </div>
-            <div class="col-sm-3 mb-4">
-            <div class="card text-center">
-        <div class="card-header bg-secondary">
-        	<h5 class="card-title text-4 text-white mb-0">Unlimited</h5>
+            <div className="col-sm-3 mb-4">
+            <div className="card text-center">
+        <div className="card-header bg-secondary">
+        	<h5 className="card-title text-4 text-white mb-0">Unlimited</h5>
         </div>
-        <div class="card-body">
-        <ul class="list-unstyled">
-        <li class="mb-3">Unlimited Talktime</li>
-        <li class="mb-3 text-black-50">Validity 90 Days</li>
-        <li><a class="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
+        <div className="card-body">
+        <ul className="list-unstyled">
+        <li className="mb-3">Unlimited Talktime</li>
+        <li className="mb-3 text-black-50">Validity 90 Days</li>
+        <li><a className="btn-link text-1" data-toggle="modal" data-target="#plan-detail" href="#">More Details</a></li>
         </ul>
-        <button class="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 399</button>
+        <button className="btn btn-sm btn-block btn-outline-primary text-5 py-1 font-weight-500 shadow-none" type="submit">$ 399</button>
         </div>
         </div>
             </div>
