@@ -250,90 +250,90 @@ export default function PorcessOrder() {
           </div>
         </TabPanel>
         <TabPanel value={activeStep} index={1}>
-          <div class="col-lg-12 text-center mt-5">
-            <h2 class="text-8">Order Summary</h2>
-            <p class="lead">Confirm recharge details</p>
+          <div className="col-lg-12 text-center mt-5">
+            <h2 className="text-8">Order Summary</h2>
+            <p className="lead">Confirm recharge details</p>
           </div>
-          <div class="col-md-8 col-lg-6 col-xl-5 mx-auto">
-            <div class="bg-white shadow-sm rounded p-3 p-sm-4 mb-0 mb-sm-4">
-              <div class="row">
-                <p class="col-sm text-muted mb-0 mb-sm-3">Mobile Number:</p>
-                <p class="col-sm text-sm-right font-weight-500">(+91) 9898989898</p>
+          <div className="col-md-8 col-lg-6 col-xl-5 mx-auto">
+            <div className="bg-white shadow-sm rounded p-3 p-sm-4 mb-0 mb-sm-4">
+              <div className="row">
+                <p className="col-sm text-muted mb-0 mb-sm-3">Mobile Number:</p>
+                <p className="col-sm text-sm-right font-weight-500">(+91) 9898989898</p>
               </div>            
-              <div class="row">
-                <p class="col-sm text-muted mb-0 mb-sm-3">Operator/Circle:</p>
-                <p class="col-sm text-sm-right font-weight-500">Vodafone | Gujarat</p>
+              <div className="row">
+                <p className="col-sm text-muted mb-0 mb-sm-3">Operator/Circle:</p>
+                <p className="col-sm text-sm-right font-weight-500">Vodafone | Gujarat</p>
               </div>
-              <div class="row">
-                <p class="col-sm text-muted mb-0 mb-sm-3">Plan:</p>
-                <p class="col-sm text-sm-right font-weight-500">Mobile top-up</p>
+              <div className="row">
+                <p className="col-sm text-muted mb-0 mb-sm-3">Plan:</p>
+                <p className="col-sm text-sm-right font-weight-500">Mobile top-up</p>
               </div>
-              <div class="row">
-                <p class="col-sm text-muted mb-0 mb-sm-3">Validity:</p>
-                <p class="col-sm text-sm-right font-weight-500">Talktime</p>
+              <div className="row">
+                <p className="col-sm text-muted mb-0 mb-sm-3">Validity:</p>
+                <p className="col-sm text-sm-right font-weight-500">Talktime</p>
               </div>
-              <div class="row">
-                <p class="col-sm text-muted mb-0 mb-sm-3">Amount:</p>
-                <p class="col-sm text-sm-right font-weight-500">$150</p>
+              <div className="row">
+                <p className="col-sm text-muted mb-0 mb-sm-3">Amount:</p>
+                <p className="col-sm text-sm-right font-weight-500">$150</p>
               </div>
-              <div class="row">
-                <p class="col-12 text-muted mb-0">Plan Description:</p>
-                <p class="col-12 text-1">Local calls free & STD calls free & Roaming Incoming & Outgoing calls free & 300 Local & National SMS & 1 GB 3G/4G Data & Data Validity 28 day(s) & For 3G/4G user - T&C apply</p>
+              <div className="row">
+                <p className="col-12 text-muted mb-0">Plan Description:</p>
+                <p className="col-12 text-1">Local calls free & STD calls free & Roaming Incoming & Outgoing calls free & 300 Local & National SMS & 1 GB 3G/4G Data & Data Validity 28 day(s) & For 3G/4G user - T&C apply</p>
               </div>
               
               
-              <div class="bg-light-4 rounded p-3">
-                <div class="row">
-                  <div class="col-sm text-3 font-weight-600">Payment Amount</div>
-                  <div class="col-sm text-sm-right text-5 font-weight-500">$150</div>
+              <div className="bg-light-4 rounded p-3">
+                <div className="row">
+                  <div className="col-sm text-3 font-weight-600">Payment Amount</div>
+                  <div className="col-sm text-sm-right text-5 font-weight-500">$150</div>
                 </div>
               </div>
               
-              <p class="text-center my-4"><a class="btn-link" data-toggle="collapse" href="#couponCode" aria-expanded="false" aria-controls="couponCode">Apply a Coupon Code</a></p>
-              <div id="couponCode" class="bg-light-3 p-4 rounded collapse">
-              <h3 class="text-4">Coupon Code</h3>
-              <div class="input-group form-group mb-0">
-                  <input class="form-control" placeholder="Coupon Code" aria-label="Promo Code" type="text" />
-                  <span class="input-group-append">
-                  <button class="btn btn-secondary" type="submit">APPLY</button>
+              <p className="text-center my-4"><a className="btn-link" data-toggle="collapse" href="#couponCode" aria-expanded="false" aria-controls="couponCode">Apply a Coupon Code</a></p>
+              <div id="couponCode" className="bg-light-3 p-4 rounded collapse">
+              <h3 className="text-4">Coupon Code</h3>
+              <div className="input-group form-group mb-0">
+                  <input className="form-control" placeholder="Coupon Code" aria-label="Promo Code" type="text" />
+                  <span className="input-group-append">
+                  <button className="btn btn-secondary" type="submit">APPLY</button>
                   </span> </div>
               </div>
               
               
-              <p class="mt-4 mb-0" ><a onClick={()=>{setActiveStep(2)}} class="pointer btn btn-primary btn-block" style={{width:'100%'}}>Make Payment</a></p>
+              <p className="mt-4 mb-0" ><a onClick={()=>{setActiveStep(2)}} className="pointer btn btn-primary btn-block" style={{width:'100%'}}>Make Payment</a></p>
             </div>
           </div>
         </TabPanel>
         <TabPanel value={activeStep} index={2}>
-          <div class="col-lg-12 text-center mt-5">
-            <h2 class="text-8">Select a Payment Mode</h2>
+          <div className="col-lg-12 text-center mt-5">
+            <h2 className="text-8">Select a Payment Mode</h2>
           </div>
-          <div class="col-lg-11 col-xl-9 mx-auto mt-3">
-            <div class="bg-white shadow-sm rounded p-4">
-              <div class="row">
-                <div class="col-md-7 col-lg-7 order-1 order-md-0">
-                  {/* <ul class="nav nav-tabs mb-4 nav-fill" id="myTab" role="tablist">
-                    <li class="nav-item"> <a class="nav-link active" id="first-tab" data-toggle="tab" href="#firstTab" role="tab" aria-controls="firstTab" aria-selected="true">Credit/Debit Cards</a> </li>
-                    <li class="nav-item"> <a class="nav-link" id="second-tab" data-toggle="tab" href="#secondTab" role="tab" aria-controls="secondTab" aria-selected="false">PayPal</a> </li>
+          <div className="col-lg-11 col-xl-9 mx-auto mt-3">
+            <div className="bg-white shadow-sm rounded p-4">
+              <div className="row">
+                <div className="col-md-7 col-lg-7 order-1 order-md-0">
+                  {/* <ul className="nav nav-tabs mb-4 nav-fill" id="myTab" role="tablist">
+                    <li className="nav-item"> <a className="nav-link active" id="first-tab" data-toggle="tab" href="#firstTab" role="tab" aria-controls="firstTab" aria-selected="true">Credit/Debit Cards</a> </li>
+                    <li className="nav-item"> <a className="nav-link" id="second-tab" data-toggle="tab" href="#secondTab" role="tab" aria-controls="secondTab" aria-selected="false">PayPal</a> </li>
                   </ul> */}
                   
-                  <div class="tab-content my-3" id="myTabContentVertical"> 
+                  <div className="tab-content my-3" id="myTabContentVertical"> 
                   <PaymentTab  handleClick={()=>{setActiveStep(3)}}/>
                   </div>
                 </div>
-                <div class="col-md-5 col-lg-5 order-0 order-md-1"> 
-                  <div class="bg-light-2 rounded p-4 mb-4">
-                    <h3 class="text-4 mb-4">Payable Amount</h3>
-                    <ul class="list-unstyled">
-                      <li class="mb-2">Amount <span class="float-right text-4 font-weight-500 text-dark">$150</span></li>
-                      <li class="mb-2">Discount <span class="text-success">(10% Off!)</span> <span class="float-right text-4 font-weight-500 text-dark">-$15</span></li>
+                <div className="col-md-5 col-lg-5 order-0 order-md-1"> 
+                  <div className="bg-light-2 rounded p-4 mb-4">
+                    <h3 className="text-4 mb-4">Payable Amount</h3>
+                    <ul className="list-unstyled">
+                      <li className="mb-2">Amount <span className="float-right text-4 font-weight-500 text-dark">$150</span></li>
+                      <li className="mb-2">Discount <span className="text-success">(10% Off!)</span> <span className="float-right text-4 font-weight-500 text-dark">-$15</span></li>
                     </ul>
                     <hr/>
-                    <div class="text-dark text-4 font-weight-500 py-1"> Total Amount<span class="float-right text-7">$135</span></div>
+                    <div className="text-dark text-4 font-weight-500 py-1"> Total Amount<span className="float-right text-7">$135</span></div>
                   </div>
-                  <div class="bg-light-2 rounded p-4 d-none d-md-block">
-                    <h3 class="text-4 mb-3">We value your Privacy.</h3>
-                    <p class="mb-0">We will not sell or distribute your information. Read our <a href="#">Privacy Policy</a>.</p>
+                  <div className="bg-light-2 rounded p-4 d-none d-md-block">
+                    <h3 className="text-4 mb-3">We value your Privacy.</h3>
+                    <p className="mb-0">We will not sell or distribute your information. Read our <a href="#">Privacy Policy</a>.</p>
                   </div>
                 </div>
               </div>
@@ -341,59 +341,59 @@ export default function PorcessOrder() {
           </div>
         </TabPanel>
         <TabPanel value={activeStep} index={3}>
-          <div class="col-lg-12 text-center mt-5">
-            <p class="text-success text-16 line-height-07"><i class="fas fa-check-circle"></i></p>
-              <h2 class="text-8">Recharge Successful</h2>
-              <p class="lead">We are processing the same and you will be notified via email.</p>
+          <div className="col-lg-12 text-center mt-5">
+            <p className="text-success text-16 line-height-07"><i className="fas fa-check-circle"></i></p>
+              <h2 className="text-8">Recharge Successful</h2>
+              <p className="lead">We are processing the same and you will be notified via email.</p>
           </div>
-          <div class="col-md-8 col-lg-6 col-xl-5 mx-auto">
-            <div class="bg-white shadow-sm rounded p-3 p-sm-4 mb-4">
-              <div class="row">
-                <div class="col-sm text-muted">Transactions ID</div>
-                <div class="col-sm text-sm-right font-weight-600">PHDF173076359</div>
+          <div className="col-md-8 col-lg-6 col-xl-5 mx-auto">
+            <div className="bg-white shadow-sm rounded p-3 p-sm-4 mb-4">
+              <div className="row">
+                <div className="col-sm text-muted">Transactions ID</div>
+                <div className="col-sm text-sm-right font-weight-600">PHDF173076359</div>
               </div>            
               <hr />
-              <div class="row">
-                <div class="col-sm text-muted">Date</div>
-                <div class="col-sm text-sm-right font-weight-600">06-Feb-2019</div>
+              <div className="row">
+                <div className="col-sm text-muted">Date</div>
+                <div className="col-sm text-sm-right font-weight-600">06-Feb-2019</div>
               </div>
               <hr />
-              <div class="row">
-                <div class="col-sm text-muted">Mode of Payment</div>
-                <div class="col-sm text-sm-right font-weight-600">Credit Card</div>
+              <div className="row">
+                <div className="col-sm text-muted">Mode of Payment</div>
+                <div className="col-sm text-sm-right font-weight-600">Credit Card</div>
               </div>
               <hr />
-              <div class="row">
-                <div class="col-sm text-muted">Transaction Status</div>
-                <div class="col-sm text-sm-right font-weight-600 text-success">Success</div>
+              <div className="row">
+                <div className="col-sm text-muted">Transaction Status</div>
+                <div className="col-sm text-sm-right font-weight-600 text-success">Success</div>
               </div>
               <hr />
-              <div class="row">
-                <div class="col-sm text-muted">Customer Name</div>
-                <div class="col-sm text-sm-right font-weight-600">Johne Cary</div>
+              <div className="row">
+                <div className="col-sm text-muted">Customer Name</div>
+                <div className="col-sm text-sm-right font-weight-600">Johne Cary</div>
               </div>
               <hr />
-              <div class="row">
-                <div class="col-sm text-muted">Mobile No</div>
-                <div class="col-sm text-sm-right font-weight-600">(+91) 9898989898</div>
+              <div className="row">
+                <div className="col-sm text-muted">Mobile No</div>
+                <div className="col-sm text-sm-right font-weight-600">(+91) 9898989898</div>
               </div>
               <hr />
-              <div class="row">
-                <div class="col-sm text-muted">Subject</div>
-                <div class="col-sm text-sm-right font-weight-600">Mobile Recharge</div>
+              <div className="row">
+                <div className="col-sm text-muted">Subject</div>
+                <div className="col-sm text-sm-right font-weight-600">Mobile Recharge</div>
               </div>
               <hr />
-              <div class="row">
-                <div class="col-sm text-muted">Payment Amount</div>
-                <div class="col-sm text-sm-right text-6 font-weight-500">$135</div>
+              <div className="row">
+                <div className="col-sm text-muted">Payment Amount</div>
+                <div className="col-sm text-sm-right text-6 font-weight-500">$135</div>
               </div>
             </div>
         
-            <div class="text-center">
-              <a href="#" class="btn-link text-muted mx-3 my-2 align-items-center d-inline-flex"><span class="text-5 mr-2"><i class="far fa-file-pdf"></i></span>Save as PDF</a>
-              <a href="#" class="btn-link text-muted mx-3 my-2 align-items-center d-inline-flex"><span class="text-5 mr-2"><i class="fas fa-print"></i></span>Print Receipt</a>
-              <a href="#" class="btn-link text-muted mx-3 my-2 align-items-center d-inline-flex"><span class="text-5 mr-2"><i class="far fa-envelope"></i></span>Email Receipt</a>
-              <p class="mt-4 mb-0"><span onClick={()=>{setActiveStep(0)}}  className="btn btn-primary">Make another Recharge</span></p>
+            <div className="text-center">
+              <a href="#" className="btn-link text-muted mx-3 my-2 align-items-center d-inline-flex"><span className="text-5 mr-2"><i className="far fa-file-pdf"></i></span>Save as PDF</a>
+              <a href="#" className="btn-link text-muted mx-3 my-2 align-items-center d-inline-flex"><span className="text-5 mr-2"><i className="fas fa-print"></i></span>Print Receipt</a>
+              <a href="#" className="btn-link text-muted mx-3 my-2 align-items-center d-inline-flex"><span className="text-5 mr-2"><i className="far fa-envelope"></i></span>Email Receipt</a>
+              <p className="mt-4 mb-0"><span onClick={()=>{setActiveStep(0)}}  className="btn btn-primary">Make another Recharge</span></p>
             </div>
           </div>
         </TabPanel>

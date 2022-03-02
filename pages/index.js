@@ -63,13 +63,13 @@ export default function Home() {
                     <div className="col-sm-10 col-lg-8 col-xl-9">
                       <div className="row no-gutters search-input-2">
                       
-                        <div class="col-lg-9 col-xl-10 form-group ">
+                        <div className="col-lg-9 col-xl-10 form-group ">
                         {/* <IntlTelInput
                           containerClassName="intl-tel-input"
                           inputClassName="form-control"
                         /> */}
 
-                          {/* <input type="tel" class="form-control shadow form-control-lg" id="mobilenumber" required="" placeholder="Enter Mobile Number" /> */}
+                          {/* <input type="tel" className="form-control shadow form-control-lg" id="mobilenumber" required="" placeholder="Enter Mobile Number" /> */}
                           <Select 
                           className={ "is-invalid form-add-input form-group height"}
                           options={options}
@@ -81,8 +81,8 @@ export default function Home() {
                           }}
                           />
                         </div>
-                        <div class="col-lg-3 col-xl-2 form-group">
-                          <a class="btn btn-primary shadow btn-block btn-lg searchbtn" href="#"><i class="fas fa-arrow-right"></i></a>
+                        <div className="col-lg-3 col-xl-2 form-group">
+                          <a className="btn btn-primary shadow btn-block btn-lg searchbtn" href="#"><i className="fas fa-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
