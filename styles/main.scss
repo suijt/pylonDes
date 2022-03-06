@@ -36,3 +36,19 @@ label{
     width: 55px !important;
   }
 }
+.MuiTabs-flexContainer{
+  flex-wrap: wrap;
+}
+.MuiStepLabel-root{
+  flex-wrap: wrap;
+  justify-content: center;
+  .MuiStepLabel-label{
+    text-align: center !important;
+  }
+}
+#header .primary-menu {
+  z-index: 10000;
+}
+input[type=checkbox]{
+  margin-right: 10px;
+}

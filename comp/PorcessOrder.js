@@ -75,11 +75,11 @@ export default function PorcessOrder() {
         {steps.map((label, index) => {
           const stepProps = {};
           const labelProps = {};
-          if (isStepOptional(index)) {
-            labelProps.optional = (
-              <Typography variant="caption">Optional</Typography>
-            );
-          }
+          // if (isStepOptional(index)) {
+          //   labelProps.optional = (
+          //     <Typography variant="caption">Optional</Typography>
+          //   );
+          // }
           if (isStepSkipped(index)) {
             stepProps.completed = false;
           }
@@ -105,7 +105,7 @@ export default function PorcessOrder() {
                   {/* <input type="text" className="form-control shadow form-control-lg" id="mobilenumber" required="" placeholder="Enter Mobile Number" /> */}
                 </div>
                 <div className="col-lg-3 col-xl-2 form-group">
-                  <button className="btn btn-primary shadow btn-block btn-lg" type="submit"><i className="fas fa-arrow-right"></i></button>
+                  <button className="btn btn-primary shadow btn-block btn-lg searchbtn" type="submit" ><i className="fas fa-arrow-right"></i></button>
                 </div>
               </div>
               </form>

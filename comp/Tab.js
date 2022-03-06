@@ -49,7 +49,7 @@ export default function TabPlan() {
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+        <Tabs className="tab" value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab className="nav-item" label="Popular" {...a11yProps(0)} />
           <Tab className="nav-item" label="Topup" {...a11yProps(1)} />
           <Tab className="nav-item" label="Special Recharge" {...a11yProps(2)} />

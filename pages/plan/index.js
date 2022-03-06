@@ -23,7 +23,7 @@ export default function Plan() {
                     </div>
                     <div className="col-12 col-md">
                       <div className="form-group mb-3 mb-md-0">
-                        <select className="custom-select" id="operator" required="">
+                        <select className=" form-select custom-select" id="operator" required="">
                           <option value="">Select Your Operator</option>
                           <option>1st Operator</option>
                           <option>2nd Operator</option>
@@ -37,7 +37,7 @@ export default function Plan() {
                     </div>
                     <div className="col-12 col-md">
                       <div className="form-group mb-3 mb-md-0">
-                        <select className="custom-select" required="">
+                        <select className="form-select custom-select" required="">
                           <option value="">Select Your Circle</option>
                           <option>1st Circle</option>
                           <option>2nd Circle</option>
